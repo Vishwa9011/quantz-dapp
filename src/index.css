@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+   font-family:
+      Chakra Petch,
+      sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+   background-color: #000000;
+   color: #fff;
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   --color-yellow-60: #def141;
+   --w-sidebar: 19.125rem;
+   --letter-spacing-1_92: 0.12rem;
+}
+
+body {
+   margin: 0;
+}
+
+.res-height {
+   height: calc(100vh - 20rem);
+}
+
+.developer-card-gradient {
+   background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%),
+      url("./assets/images/developerCard.png") lightgray 50% / cover no-repeat;
+   box-shadow:
+      0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+      0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.processor-card-gradient {
+   background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%),
+      url("./assets/images/processorCard.png") lightgray 50% / cover no-repeat;
+   box-shadow:
+      0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+      0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.w-dynamic {
+   margin-left: var(--w-sidebar);
+   /* Make space for the sidebar */
+   width: calc(100% - var(--w-sidebar));
+   /* The remaining width of the page */
+}
+
+.h-dynamic {
+   height: 100vh;
+}
+
+/* Scroll Bar styling */
+/* WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+   width: 8px;
+   /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+   background: #00000000;
+   /* Track (scroll area) background */
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #888;
+   /* Scrollbar color */
+   border-radius: 10px;
+   /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background-color: #a09b9b;
+   /* Darker color on hover */
+}
+
+/* Firefox */
+* {
+   scrollbar-width: thin;
+   /* Make scrollbar thinner */
+   scrollbar-color: #888 #f1f1f100;
+   /* Thumb color | Track color */
+}
+
+.navMobileMenuActive .menubar:nth-child(2) {
+   opacity: 0 !important;
+}
+
+.navMobileMenuActive .menubar:nth-child(1) {
+   transform: translateY(7.5px) rotate(45deg) !important;
+}
+
+.navMobileMenuActive .menubar:nth-child(3) {
+   transform: translateY(-5px) rotate(-45deg);
+}
+
+.mob-res-height {
+   height: 100vh;
+}
+
+.custom-select-styling div {
+   background-color: #000000 !important;
+   color: #fff !important;
+   border-radius: 0rem !important;
+   border: 1px solid rgba(255, 255, 255, 0.6) !important;
+   align-items: flex-start !important;
+   padding: 1.5rem !important;
+   display: flex !important;
+   align-items: center !important;
+   justify-content: center !important;
+   font-family:
+      Roboto Mono,
+      monospace;
+}
+
+.custom-select-styling div:hover {
+   border: 1px solid rgba(255, 255, 255, 0.788) !important;
+}
+
+.custom-select-styling .ant-select-selection-placeholder {
+   color: #fff !important;
+   font-size: 0.875rem !important;
+   width: 100% !important;
+   display: block !important;
+   margin-left: 0 !important;
+   font-family:
+      Roboto Mono,
+      monospace;
+}
+
+.custom-select-styling input {
+   padding-left: 0.8rem !important;
+}
+
+.ant-select-arrow {
+   height: 100% !important;
+}
+
+.claim-tokens-table {
+   border-color: rgba(255, 255, 255, 0.316);
+   width: 100%;
+}
+
+.claim-tokens-table td {
+   border: 0.5px solid rgba(255, 255, 255, 0.2);
+   /* add a border around cells */
+   text-align: left;
+   /* align text to the left */
+   padding: 0.75rem 1rem;
+   font-size: 1rem;
+   font-weight: 600;
+   width: 50%;
+   letter-spacing: var(--letter-spacing-1_92);
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.tx-history-table {
+   border-color: rgba(255, 255, 255, 0.316);
+   width: 100%;
+}
+
+.tx-history-table th,
+.tx-history-table td {
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   /* add a border around cells */
+   text-align: left;
+   /* align text to the left */
+   padding: 0.75rem 1rem;
+   font-size: 1rem;
+   width: 25%;
+   letter-spacing: var(--letter-spacing-1_92);
+}
+
+.tx-history-table th {
+   color: var(--color-yellow-60, #def141);
+   font-weight: 700;
+}
+
+.tx-history-table td {
+   color: rgba(255, 255, 255, 0.7);
+   /* Replace #yourColorHere with your desired color */
+   font-weight: 600;
+}
+
+.overlay-gradient {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+/* Edge (New Chromium-based) already supports ::-webkit-scrollbar */
+
+@media screen {
+   @media (max-width: 771px) {
+      .w-dynamic {
+         width: 100%;
+         margin-left: 0;
+         /* Make space for the sidebar */
+      }
+
+      .h-dynamic {
+         height: calc(100vh - 6.875rem);
+      }
+
+      .mob-res-height {
+         height: calc(100vh - 6.875rem);
+      }
+
+      .res-height {
+         height: calc(100vh - 17rem);
+      }
+
+      .claim-tokens-table td {
+         padding: 0.5rem 1rem;
+         font-size: 0.75rem;
+      }
+   }
+
+   @media (max-width: 580px) {
+      .tx-history-table td {
+         font-size: 0.75rem;
+      }
+
+      .tx-history-table {
+         width: 780px;
+      }
+   }
+}
+
+@layer base {
+   :root {
+      --radius: 0.5rem;
+   }
+}

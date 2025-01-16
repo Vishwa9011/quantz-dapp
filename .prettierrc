@@ -1,0 +1,29 @@
+{
+   "semi": true,
+   "trailingComma": "all",
+   "printWidth": 180,
+   "tabWidth": 3,
+   "useTabs": false,
+   "jsxSingleQuote": false,
+   "bracketSpacing": true,
+   "arrowParens": "always",
+   "htmlWhitespaceSensitivity": "css",
+   "endOfLine": "lf",
+   "quoteProps": "as-needed",
+   "overrides": [
+      {
+         "files": "*.json",
+         "options": {
+            "tabWidth": 2
+         }
+      },
+      {
+         "files": "*.md",
+         "options": {
+            "proseWrap": "always"
+         }
+      }
+   ],
+   "plugins": ["prettier-plugin-tailwindcss"],
+   "tailwindConfig": "./tailwind.config.ts"
+}
