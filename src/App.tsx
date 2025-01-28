@@ -50,6 +50,7 @@ function App() {
                <Sidebar />
             </div>
             <div className="w-dynamic w-full overflow-auto p-[1.25rem] mobile:p-[2rem]">
+               <div className="flex gap-2">ENV - {import.meta.env.VITE_TEST_ENV}</div>
                <AllRoutes />
             </div>
          </div>
